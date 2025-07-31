@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV GOOGLE_API_KEY="AIzaSyB3SlsnfssavO3wLi65cNkL-JkhKygCmnY"
+ENV GOOGLE_API_KEY="your api key"
 ENV PYTHONPATH=/app
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
